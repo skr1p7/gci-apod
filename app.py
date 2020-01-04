@@ -1,3 +1,5 @@
+# add your NASA APOD API KEY at line 20
+# add you ConvertAPI key at line 11
 from flask import Flask, render_template, request, redirect, url_for
 import requests
 import wget
@@ -6,7 +8,7 @@ from docx.shared import Inches
 import os
 import convertapi
 
-convertapi.api_secret = 'yPn1JnJhdFGsnvN8'
+convertapi.api_secret = 'your-api-key-for-convertapi'
 
 app = Flask(__name__)
 
@@ -15,7 +17,7 @@ def main():
     if request.method == "POST":
         date = request.form['text']
         global url
-        url = 'https://api.nasa.gov/planetary/apod?api_key=w43FMRhURuPXm5zO3mYsSa4pBJMfcH3CggwfyeZZ&date={}'.format(date)
+        url = 'https://api.nasa.gov/planetary/apod?api_key=<your-api-key-here>&date={}'.format(date)
         req = requests.get(url)
         data = req.json()
         if req.status_code == 400:
