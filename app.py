@@ -14,7 +14,7 @@ def main():
         flag = 0
         date = request.form['text']
         global url
-        url = 'https://api.nasa.gov/planetary/apod?api_key=w43FMRhURuPXm5zO3mYsSa4pBJMfcH3CggwfyeZZ&date={}'.format(date)
+        url = 'https://api.nasa.gov/planetary/apod?api_key={you_api_key}&date={}'.format(date)
         req = requests.get(url)
         data = req.json()
         if req.status_code == 400:
