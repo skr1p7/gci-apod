@@ -8,13 +8,13 @@ You should have your API Keys which you can get from NASA(https://api.nasa.gov/)
 Clone the repository using the command in your terminal
 
 ```bash
-git clone https://github.com/skr1p7/gci-apod.git
+$ git clone https://github.com/skr1p7/gci-apod.git
 ```
 
 You are required to have Python 2.7 installed in order to make use of this tool, in order to install Python, use the following command:
 
 ```bash
-sudo apt-get install python 
+$ sudo apt-get install python 
 ```
 
 Install the requirements by using the following command:
