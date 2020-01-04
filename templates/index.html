@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: x-large;
+        text-align: center;
+    }
+    img {
+        display: block;
+        height: 50%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <img src="{{ image }}"></img>
+    <form action="/download/" method="post">
+    <button name="forwardBtn" type="submit">Download</button>
+</form>
+</body>
+</html>
